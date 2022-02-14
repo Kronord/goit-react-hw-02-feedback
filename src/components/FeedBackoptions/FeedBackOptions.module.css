@@ -1,0 +1,21 @@
+.btnBox {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 80px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px #ffa500 solid;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ffa5003D;
+    color: #1E90FF;
+}
