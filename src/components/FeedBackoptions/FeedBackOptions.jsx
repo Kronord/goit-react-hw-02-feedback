@@ -1,7 +1,9 @@
 import React from 'react';
-import s from './FeedBackOptions.module.css'
+import propTypes from 'prop-types';
+import s from './FeedBackOptions.module.css';
 
-const FeedBackOptions = ({onLeaveFeedBack, options}) => {
+const FeedBackOptions = ({ onLeaveFeedBack, options }) => {
+  console.log(onLeaveFeedBack, options);
   return (
     <div className={s.btnBox}>
       {options.map((label, index) => {
@@ -9,6 +11,11 @@ const FeedBackOptions = ({onLeaveFeedBack, options}) => {
       })}
     </div>
   );
+};
+
+FeedBackOptions.propTypes = {
+  onLeaveFeedBack: propTypes.func.isRequired,
+  options: propTypes.arrayOf(propTypes.string.isRequired),
 };
 
 export default FeedBackOptions;
